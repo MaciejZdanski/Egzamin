@@ -16,34 +16,35 @@
     </header>
 
     <form class="form">
-        <div class="mail">
-          <label for="exampleInputEmail1" class="form-label">Login lub Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        
+        <div class="form-group">
+            <label for="stalyEmail">Adres Email</label>
+            <input type="email" class="form-control"  required>
         </div>
         <br>
         <div class="nazwa"> Dane osobowe 
             <div class="col">
-              <input type="text" class="form-control" placeholder="Imię" >
+              <input type="text" class="form-control" placeholder="Imię" required >
             </div>
-            </div>
+            <div>
                 <div class="col">
                 <input type="text" class="form-control" placeholder="Nazwisko" >
                 </div>
             </div>
             <select class="form-select">
-                
                 <option selected >Płeć</option>
                 <option value="1">Mężczyzna</option>
                 <option value="2">Kobieta</option>
                 <option value="3">Wolę nie podawać</option>
             </select>
+        </div>    
         <br>
         <div class="haslo"> Poświadczenia 
             <div class="col">
-              <input type="text" class="form-control" placeholder="Hasło">
+              <input type="password" class="form-control" placeholder="Hasło" required>
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Powtórz hasło" >
+              <input type="password" class="form-control" placeholder="Powtórz hasło" required>
             </div>
         </div>
         <br>
@@ -77,5 +78,8 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     </footer>
+
+    
+
 </body>
 </html>
